@@ -14,22 +14,22 @@ body {
 	height: 100vh;
 	margin: -20px 0 50px;
 }
-.roles {
+.gender {
     display: flex;
-	font-size: 30px;
-	/* display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px; */
+	font-size: 20px;
 	margin-bottom: 20px;
+    margin-top: 10px;
+    
   }
 
-.roles input[type="radio"]{
+.gender input[type="radio"]{
 	margin-right: 10px;
 }
-.roles label {
-  margin-right: 20px;
-  color: #182848;
+.gender label {
+  margin-right: 50px;
+  /* color: #182848; */
 }
+
 
 h1 {
 	font-weight: bold;
@@ -164,20 +164,4 @@ input {
 
 .overlay-right {
 	right: 0;
-}
-
-
-.social-container {
-	margin: 50px 0;
-}
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
 }

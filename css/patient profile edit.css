@@ -32,8 +32,8 @@ h1 {
 
 button {
 	border-radius: 20px;
-	border: 1px solid navy;
-	background-color: navy;
+	border: 1px solid #192841;
+	background-color: #192841;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -42,6 +42,8 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
     cursor: pointer;
+    margin-top: 10px;
+    margin-left: 35%;
 }
 
 .container {
@@ -79,7 +81,10 @@ button {
 }
 
 .value-container {
-  width: 50%;
+  width: 60%;
+}
+.value-container input{
+  width: 300px;
 }
 
 .label-container label,

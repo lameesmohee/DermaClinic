@@ -2,9 +2,17 @@
 <head>
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Login Form Using HTML And CSS Only</title>
+	<title>Login</title>
 </head>
 <body>
+	<div class="roles">
+		<input type="radio" name="role" value="patient" id="patient" required>
+		<label for="patient">Patient</label><br>
+		<input type="radio" name="role" value="doctor" id="doctor"required>
+		<label for="doctor">Doctor</label><br>
+		<input type="radio" name="role" value="admin" id="admin"required>
+		<label for="admin">Admin</label>
+	</div>
 	<div class="container" id="container">
 		<div class="form-container log-in-container">
 			<form action="#">
@@ -32,5 +40,6 @@
 			</div>
 		</div>
 	</div>
+	
 </body>
 </html>

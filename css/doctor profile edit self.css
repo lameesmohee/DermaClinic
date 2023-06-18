@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+    
 }
 
 body {
@@ -17,9 +18,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	/* margin: -20px 0 50px; */
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -34,8 +35,8 @@ h1 {
 
 button {
 	border-radius: 20px;
-	border: 1px solid navy;
-	background-color: navy;
+	border: 1px solid #192841;
+	background-color: #192841;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -44,6 +45,8 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
     cursor: pointer;
+    margin-top: 10px;
+    margin-left: 35%;
 }
 
 .container {
@@ -52,7 +55,7 @@ button {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-  margin-top: 10px; 
+  margin-top: 20px; 
 	width: 768px;
 	max-width: 100%;
 	min-height: 600px;
@@ -72,7 +75,7 @@ button {
 }
 .form-container .row {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .label-container {
@@ -81,7 +84,10 @@ button {
 }
 
 .value-container {
-  width: 50%;
+  width: 60%;
+}
+.value-container input{
+  width: 300px;
 }
 
 .label-container label,
@@ -101,7 +107,7 @@ button {
   color: #fff;
 }
 .options-container {
-  margin-top: 60%;
+  margin-top: 65%;
   color: #fff;
   
 }
@@ -121,11 +127,6 @@ button {
 .options-container ul li a{
   text-decoration: none;
   color: white !important;
-  display: inline-block;
-  transition: font-size 0.1s;
-}
-.op:hover a {
-  font-size: 20px; /* Increase the font size as desired */
   
 }
 .img{

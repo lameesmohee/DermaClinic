@@ -39,8 +39,7 @@ h1 {
   /* background-color: #8c9dad; */
   display: inline-block;
   /* margin-left: 20%; */
-  margin-bottom: 55px;
-  
+  margin-bottom: 80px;
   align-content: center;
 
 }
@@ -50,7 +49,7 @@ h1 {
     padding-bottom: 0px;
     padding-left: 10px;
     height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-top: 10px;
     /* object-fit:contain; */
 
@@ -75,6 +74,8 @@ button {
 }
 
 .container {
+
+
 	background-color: #fff;
 	border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -84,9 +85,20 @@ button {
 	width: 768px;
 	max-width: 100%;
 	min-height: 600px;
-  width: 70%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
 }
+
+
+.form-action{
+
+
+    margin-bottom: 100px;
+
+
+}
+
+
 
 .form-container {
 	position: absolute;
@@ -293,4 +305,13 @@ button {
 
 label{
     font-size: 15px;
+}
+
+
+.validation{
+
+    width: 200px;
+    margin-bottom: 15px;
+
+
 }

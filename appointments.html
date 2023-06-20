@@ -6,7 +6,7 @@
 
 <head>
     <title> Appointment </title>
-    <link rel="stylesheet" href="/css/appointments.css">
+    <link rel="stylesheet" href="css/appointments.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <body>
@@ -17,8 +17,7 @@
 
             <div class="header">
             
-            <h1> Appointment   </h1> 
-            <img class="image" src="/images/appointment.jpg">
+            <h1> Appointment <i class="fa fa-calendar" aria-hidden="true"></i></h1>
             
             </div>
 
@@ -57,73 +56,47 @@
                 </div>
                 <div class="row">
                     <div class="label-container">
-                        <label for="Date" style="margin-left: 5px;"> Pick Day :</label>
+                        <label for="Day" style="margin-left: 5px;"> Pick Day :</label>
                     </div>
                     <div class="value-container">
-                        <input type="date" style="margin-left: 10px;" max="2023-08-23" min="2023-06-21" required>
+                        <select name="Day" id="Day" >                 
+                            <option value="Saturday" selected> Saturday</option>
+                            <option value="Sunday"  > Sunday </option>
+                            <option value="Monday" > Monday </option>
+                            <option value="Tuesday" > Tuesday </option>
+                            <option value="Wednesday" > Wednesday </option>
+                            <option value="Thursday" > Thursday </option>
+                            <option value="Friday" > Friday </option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="label-container">
-                        <label for="time" style="
-                        margin-left:-15px;
-                        
-
-                        "> 
-                        Pick Time :
-                    </label>
+                        <label for="time" style="margin-left:-15px;"> Pick Time :</label>
                     
                     </div>
                     <div class="validation">
                     <div class="value-container">
-                        <input type="time" id="time" min="14:00" max="21:00"  required>
-                        <span class="validity"></span>
+                        <select name="Time" id="Time" >                 
+                            <option value="Saturday" selected> </option>
+                            <option value="Sunday"  >  </option>
+                            <option value="Monday" >  </option>
+                            <option value="Tuesday" >  </option>
+                            <option value="Wednesday" >  </option>
+                            <option value="Thursday" >  </option>
+                            <option value="Friday" > </option>
+                        </select>
+                        
+                        <!-- <span class="validity"></span> -->
                     </div>
                     </div>
                 </div>
-
-
-
-
-                <!-- <div class="horizontal-div">
-                    <div class="row ">
-                        <div class="label-container ">
-                            <label for="doc_id">Doctor ID :</label>
-                        </div>
-                        <div class="value-container ">
-                            <input type="text" class="docInput">
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="label-container ">
-                            <label for="pat_id">Patient ID :</label>
-                        </div>
-                        <div class="value-container ">
-                            <input type="text" class="patInput">
-                        </div>
-                    </div>    -->
-
-
-
-                <!-- </div> -->
                
                 <button>Submit</button>
                 
             </form>
         </div>
-        <!-- <div class="options">
-           <div class="options-container">
-            <form class="right-div">
-                <ul>
-                    <li class="op"><a href="#">Home</a></li>
-                    <li class="op"><a href="#">Arrange an Appointment</a></li>
-                    <li class="op"><a href="#">Edit Information</a></li>
-                    <li class="op"><a href="#">Log Out</a></li>
-                </ul>
-            </form>
-            </div> 
-        </div> -->
     </div>
 
 

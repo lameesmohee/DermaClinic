@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link href="/stylesheets/doctor profile.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container" id="container">
+            <h1>Personal Information</h1>
+            <form action="#">
+                <div class="img">
+                    <input type="image" src="/images/doctor-icon-2048x2048-g71dy4ps.png">
+                </div>
+            </form>
+            <div class="form-container">
+                <form action="profile" method="get">
+
+                    <div class="row">
+                 {{#each datad }}
+                            
+                      
+                        <div class="label-container">
+                            <label for="name">Name :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="name">{{this.Dname}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="id">ID :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="id">{{this._id}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="specialization">Specialization :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="specialization">{{this.Specialization}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="departmentID">Department ID :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="departmentID">{{this.dep_id}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="email">Email :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="email">{{this.Demail}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="number">Phone Number :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="number">{{this.Dphone}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="age">Age :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="age">{{this.Dage}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="address">Address :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="address">{{this.Daddress}}</label>
+                        </div>
+                    </div>
+                   
+                 {{/each}}    
+                </form>
+                 
+            </div>
+            <div class="options">
+               <div class="options-container">
+                   <ul>
+                        <form action="/homeaftersignin" id="7" method="get"  class="right-div">
+                            <li class="op"><a  href="javascript:;" onclick="document.getElementById('7').submit();">Home</a></li>
+                        </form>
+                        <form action="/addp"  id="p"  method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('p').submit();"> Add Prescription</a></li>
+                        </form>
+                        <form action="workhour" id="9" method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('9').submit();">Worktime</a></li>
+                        </form>
+                        <form   action="editdoctor" id="6" method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('6').submit();">Edit Information</a></li>
+                        </form>
+                      
+                        <form action="logout" id="5" method="get"   class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('5').submit();">Log Out</a></li>
+                        </form>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link href="/stylesheets/Patient Prescription.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- <h1>Prescription</h1> -->
+
+        <div class="form-container">
+            <h1>Prescription <i class="fa fa-medkit" aria-hidden="true"></i></h1>
+
+            <form action="prescription" method="get">
+                {{#each data }}
+
+
+                <div class="row">
+                    <div class="label-container">
+                        <label for="Nameofmedecine">Medication Name :</label>
+                    </div>
+                    <div class="value-container">
+                        <label for="Nameofmedecine">{{this.Nameofmedicine}}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-container">
+                        <label for="Dosage">Medication Dose :</label>
+                    </div>
+                    <div class="value-container">
+                        <label for="Dosage">{{this.Dosage}}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-container">
+                        <label for="contraindictions">Contraindications :</label>
+                    </div>
+                    <div class="value-container">
+                        <label for="contraindictions" {{this.contraindictions}}</label>
+                    </div>
+                </div>
+                <div class="horizontal-div">
+                    <div class="row ">
+                        <div class="label-container ">
+                            <label for="doc_id" class="docInput">Doctor ID :</label>
+                        </div>
+                        <div class="value-container ">
+                            <label for="doc_id">{{this.doc_id}}</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="label-container ">
+                            <label for="pat_id" class="patInput">Patient ID :</label>
+                        </div>
+                        <div class="value-container ">
+                            <label for="pat_id">{{this.pat_id}}</label>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                {{/each}}
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link href="/stylesheets/doctor profile edit self.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container" id="container">
+            <h1>Personal Information</h1>
+            <form action="#">
+                <div class="img">
+                    <input type="image" src="/images/doctor-icon-2048x2048-g71dy4ps.png">
+                </div>
+            </form>
+            <div class="form-container">
+                  {{#each messages }}
+                    <p>{{this}}</p>
+                    
+                  {{/each}}
+                <form action="editd" method="post">
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="name">Name :</label>
+                        </div>
+                        <div class="value-container">
+                            <input  name="name" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="id">ID :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="id">{{doctor_id}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="specialization">Specialization :</label>
+                        </div>
+                        <div class="value-container">
+                            
+                           <label for="specialization">{{spec}}</label>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="departmentID">Department ID :</label>
+                        </div>
+                        <div class="value-container">
+                           <label for="departmentID">{{dep_id}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="number">Phone Number :</label>
+                        </div>
+                        <div class="value-container">
+                            <input name="number" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="age">Age :</label>
+                        </div>
+                        <div class="value-container">
+                            <input name="age" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="address">Address :</label>
+                        </div>
+                        <div class="value-container">
+                           <input name="address" type="text">
+                        </div>
+                    </div>
+                    
+                    <button>Confirm Changes</button>
+                    
+                </form>
+            </div>
+            <div class="options">
+               <div class="options-container">
+                <!-- <form class="right-div">
+                    <ul>
+                        <li class="op"><a href="#">Home</a></li>
+                        <li class="op"><a href="#">Arrange an Appointment</a></li>
+                        <li class="op"><a href="#">Edit Information</a></li>
+                        <li class="op"><a href="#">Log Out</a></li>
+                    </ul>
+                </form> -->
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+   
+    <head>
+        <link href="/stylesheets/patient profile.css" rel="stylesheet">
+        
+
+    </head>
+    <body>
+        <div class="container" id="container">
+            <h1>Personal Information</h1>
+            <form action="#">
+                <div class="img">
+                    <input type="image" src="/images/168726.png">
+                </div>
+            </form>
+            <div class="form-container">
+                <form action="profile" method="get">
+                    {{#each datap}}
+                        
+                  
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="name">Name :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="name">{{this.Pname}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="id">ID :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="name">{{this._id}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="email">Email :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="email">{{this.Pemail}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="number">Phone Number :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="number">{{this.Pphone}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="age">Age :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="age">{{this.Page}}</label>
+                        </div>
+                    </div>
+                   {{/each}}
+                </form>
+            </div>
+           <div class="options">
+               <div class="options-container">
+                   <ul>
+                        <form id="7"  action="/homeaftersignin" method="get" class="right-div">
+                            <li class="op"> <a href="javascript:;" onclick="document.getElementById('7').submit();">Home</a></li>
+                        </form>
+                        <form id="10"  action="/prescription" method="get"class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('10').submit();">Prescription</a></li>
+                        </form>
+                        <form id="3" action="/appointment"  method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('3').submit();">Arrange an Appointment</a></li>
+                        </form>
+                        <form id="6" action="editpatient"  method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('6').submit();">Edit Information</a></li>
+                        </form>
+                        <form id="5" action="logout"  method="get" class="right-div">
+                            <li class="op" ><a href="javascript:;" onclick="document.getElementById('5').submit();">Log Out</a></li>
+                        </form>
+                        
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>

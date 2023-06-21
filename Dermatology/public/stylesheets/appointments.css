@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+    
+}
+
+body {
+	background: url(../images/background/face-mask.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	/* margin: -20px 0 50px; */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+
+	font-weight: bold;
+	text-align: center;
+  /* background-color: #8c9dad; */
+  display: inline-block;
+  /* margin-left: 20%; */
+  margin-bottom: 80px;
+  align-content: center;
+
+}
+
+
+
+
+button {
+	border-radius: 20px;
+	border: 1px solid #192841;
+	background-color: #192841;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 15%;
+    /* width: 20px; */
+    /* height: 10px; */
+}
+
+.container {
+
+
+	background-color: #fff;
+	border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+  margin-top: 20px; 
+	width: 768px;
+	max-width: 100%;
+	min-height: 600px;
+  width: 50%;
+  height: 40%;
+}
+
+
+.form-action{
+
+
+    margin-bottom: 100px;
+
+
+}
+
+
+
+.form-container {
+	position: absolute;
+	top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* top: 45%; */
+  /* left: 40%; */
+  /* transform: translate(15%,-50%); */
+  /* margin-left: 10%; */
+  
+  text-align: center;
+  /* width: 500px; */
+}
+
+.table-container{
+  max-height: 500px;
+  overflow-y:auto;
+  overflow-x: auto;
+  max-height: 400px;
+  width: 600px;
+  /* margin-left: -40px; */
+}
+.styled-table {
+  border-collapse: collapse;
+  /* margin: 25px 0; */
+  font-size: 0.9em;
+  font-family: sans-serif;
+  /* min-width: 400px; */
+  width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed;
+  
+
+}
+.styled-table thead tr {
+
+background-color: #182848;
+  color: #ffffff;
+  text-align: left;
+  height: 30px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  height: 50px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #182848;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #182848;
+}
+td:empty {
+  visibility: visible;
+  height: 20px;
+}
+th, td {
+   width: 114px; 
+   max-height: 100px; 
+   overflow: auto;
+  word-wrap: break-word; 
+  white-space: normal; 
+  text-align: center;
+}
+
+
+.form-container .row {
+
+  display: flex;
+  margin-bottom: 30px;
+ 
+  
+}
+
+.label-container {
+  width: 50%;
+  font-weight:600;
+}
+
+.value-container {
+
+  /* width: 200px; */
+  margin-left: -20px;
+  display: flex;
+  height: 20px;
+
+}
+.value-container input{
+  width:90%;
+}
+
+.label-container label,
+.value-container label {
+
+
+  display: block;
+  margin-bottom: 10px;
+  /* margin-left: 10px; */
+}
+
+
+.options{
+  position: absolute;
+  width:30% ;
+  height: 100%;
+  right: 0;
+  background: #192841;
+  background: linear-gradient(to right, #1187ad, #acefff);
+  margin-top: -248.5px;
+  text-align: center;
+  color: #fff;
+}
+.options-container {
+  margin-top: 65%;
+  color: #fff;
+  
+}
+
+.options-container ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.options-container ul li {
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-align: left;
+}
+.options-container ul li a{
+  text-decoration: none;
+  color: white !important;
+  
+}
+.img{
+  text-align: center;
+  ;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(to right, #1187ad, #acefff);
+  margin-left: 30%;
+}
+.img input[type="image"] {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: contain; /* Fit the entire image within the container */
+}
+
+.patInput{
+  width:80% !important;  
+  }
+  .docInput{
+    width:80% !important;  
+  }
+  .horizontal-div{
+    display: flex;
+    margin-left:37px;
+  }
+ 
+
+
+
+
+  input:invalid + span::after {
+    position: absolute;
+    content: "✖";
+    padding-left: 5px;
+    color: red;
+    font-size: 20px;
+  }
+  
+  input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+    color: green;
+    font-size: 20px;
+  }
+
+
+  select {
+    width: 100%;
+    margin-left: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Styles for the select dropdown arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select::-webkit-select-placeholder {
+    color: #999;
+  }
+  
+  select::-moz-placeholder {
+    color: #999;
+  }
+  
+  select:-ms-input-placeholder {
+    color: #999;
+  }
+  
+  select::placeholder {
+    color: #999;
+  }
+  
+  /* Hover and focus styles for the select element */
+  select:hover,
+  select:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+  }
+
+
+
+  input[type="date"] {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Hover and focus styles for the date input */
+  input[type="date"]:hover,
+  input[type="date"]:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+  }  
+
+
+
+  input[type="time"] {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Hover and focus styles for the date input */
+  input[type="time"]:hover,
+  input[type="time"]:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+  }  
+
+
+label{
+    font-size: 15px;
+}
+
+
+.validation{
+
+    width: 200px;
+    margin-bottom: 15px;
+
+
+}
+.book{
+  list-style: none;
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}

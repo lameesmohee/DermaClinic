@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link href="/stylesheets/add a medical device.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            
+            <div class="form-container">
+                <h1>Add A Medical Device <i class="fa fa-desktop" aria-hidden="true"></i></h1> 
+                <p>{{msg}}</p>
+                <form action="adddev" method="post">
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="code">Device Code :</label>
+                        </div>
+                        <div class="value-container">
+                            <input name="code"  type="text">
+                        </div>
+                    </div >
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="manufacturer">Manufacturer :</label>
+                        </div>
+                        <div class="value-container">
+                            <input name="manu" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="ppm">PPM :</label>
+                        </div>
+                        <div class="value-container">
+                            <input  name="ppm"  type="text">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="label-container ">
+                            <label for="dep_id">Department ID :</label>
+                        </div>
+                        <div class="value-container ">
+                            <input name="dep_id"  type="text">
+                        </div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link href="/stylesheets/show medical devices.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <!-- <h1>Prescription</h1> -->
+            
+            <div class="form-container">
+                <h1>Medical Devices <i class="fa fa-desktop" aria-hidden="true"></i></h1> 
+
+                <form action="showdevice" method="get">
+                    <div class="table-container">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Manufacturer</th>
+                                    <th>PPM</th>
+                                    <th>Department ID</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             {{#each data }}
+                                    
+                               
+                                <tr>
+                                    <td>{{this.Code}}</td>
+                                    <td>{{this.Manufacturer}}</td>
+                                    <td>{{this.PPM}}</td>
+                                    <td>{{this.dep_id}}</td>
+                                    <td><a class="icon-a" href="/deletecode/{{this.Code}}"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                    
+                                </tr>
+                             {{/each}}
+                                
+                                <!-- and so on... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </body>
+</html>

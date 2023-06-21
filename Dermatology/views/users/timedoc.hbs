@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link href="/stylesheets/work-hours.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <!-- <h1>Prescription</h1> -->
+            
+            <div class="form-container">
+                <h1>Worktime<i class="fa fa-clock-o" aria-hidden="true"></i></h1> 
+
+                <form action="workhour" method="get">
+                    <div class="table-container">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                  <th>Day</th>
+                                  
+                                  <th>From</th>
+                                  <th>To</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             {{#each data}}
+                              
+                                {{#each this.slots }}
+                                 
+                                 <tr>
+                                   <td>{{this.Day}}</td>
+                                 
+                                   <td>{{this.start}}</td>
+                                   <td>{{this.end}}</td>
+                               
+                                 </tr>
+                                {{/each}}
+                             {{/each}}  
+                                
+                                <!-- and so on... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </body>
+</html>

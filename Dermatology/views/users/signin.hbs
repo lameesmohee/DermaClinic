@@ -1,0 +1,61 @@
+<form action="profilesignin" class="form1" id="pp" method="post"></form>
+<html>		
+<head>
+	<link rel="stylesheet" href={{style}}>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login</title>
+</head>
+<body>
+	<div class="roles">
+	
+		
+		<input form= "pp" type="radio" name="role" value="patient" id="patient" required>
+		<label for="patient">Patient</label><br>
+		<input  form= "pp" type="radio" name="role" value="doctor" id="doctor"required>
+		<label for="doctor">Doctor</label><br>
+		<input  form= "pp" type="radio" name="role" value="admin" id="admin"required>
+		<label for="admin">Admin</label>
+		
+
+
+	</div>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form action="#">
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input  form= "pp" name="email" type="email" placeholder="Email" />
+				<input  form= "pp"  name="password" type="password" placeholder="Password" />
+			
+				{{#each messages }}
+	            	<p class="msg">{{this}}</p>
+	    		{{/each}}
+				
+				
+				<a href="#">Forgot your password?</a>
+				<button form= "pp">Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>Welcome To</h1>
+                    <h1>X-Cream</h1>
+					<p>Log in to be able to benefit from our services and be in touch with us.</p>
+                    <span>Don't have an account?</span>
+				
+					
+					<button onclick="document.location='signup'"> sign up</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+   
+</body>
+</html>

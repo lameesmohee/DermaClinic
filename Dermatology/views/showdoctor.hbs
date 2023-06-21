@@ -1,0 +1,64 @@
+<html>
+    <form action="deletedoctor" method="post" id="dd"></form>
+    <head>
+        <link href="/stylesheets/show doctors.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <!-- <h1>Prescription</h1> -->
+            
+            <div class="form-container">
+                <h1>Doctors <i class="fa fa-stethoscope" aria-hidden="true"></i></i></h1> 
+
+                <form  action="showdoctor" method="get"></form>
+                    <div class="table-container">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Specialization</th>
+                                    <th>Email</th>
+                                    <th>Salary</th>
+                                    <th>Mobile Number</th>
+                                    <th>Department ID</th>
+                                    <th>Sex</th>
+                                    <th>Age</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             {{#each data }}
+                                    
+                              
+                                <tr>
+                                    <td> <a href="/delete/{{this._id}}" class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                      </a></td>
+                                    <td form="d" data-name="id">{{this._id}}</td>
+                                    <td>{{this.Dname}}</td>
+                                    <td>{{this.Specialization}}</td>
+                                    <td>{{this.Demail}}</td>
+                                    <td>{{this.DSalary}}</td>
+                                    <td>{{this.Dphone}}</td>
+                                    <td>{{this.dep_id}}</td>
+                                    <td>{{this.Dsex}}</td>
+                                    <td>{{this.Dage}}</td>
+                                    
+                                    
+                                </tr>
+                            {{/each}}  
+                                
+                                
+                                <!-- and so on... -->
+                            </tbody>
+                        </table>
+                    </div>
+             
+            </div>
+           
+        </div>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link href="/stylesheets/admin profile.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="container" id="container">
+            <h1>Personal Information</h1>
+            <form action="profile" method="get">
+                <div class="img">
+                    <input type="image" src="/images/168726.png">
+                </div>
+            </form>
+            <div class="form-container">
+                <form action="#">
+                 {{#each dataa }}
+                        
+                    
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="name">Name :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="name">{{this.Aname}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="id">ID :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="id">{{this._id}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="email">Email :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="email">{{this.Aemail}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="salary">Salary :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="salary">{{this.ASalary}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="sex">Sex :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="sex">{{this.Asex}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-container">
+                            <label for="age">Age :</label>
+                        </div>
+                        <div class="value-container">
+                            <label for="age">{{this.Aage}}</label>
+                        </div>
+                    </div>
+                  {{/each}}  
+                </form>
+            </div>
+            <div class="options">
+               <div class="options-container">
+                   <ul>
+                         <form id="7"  action="/homeaftersignin" method="get" class="right-div">
+                            <li class="op"> <a href="javascript:;" onclick="document.getElementById('7').submit();">Home</a></li>
+                        </form>
+                        <form   action="adddoc"  id="6" method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('6').submit();">Add Doctor</i></a></li>
+                        </form>
+                        <form  action="/adddevice"  id="55" method="get" class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('55').submit();">Add a Medical Device</a></li>
+                        </form>
+                        <form    action="/showdoctor"  id="8" method="get"  class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('8').submit();">Show Doctors</a></li>
+                        </form>
+                        <form    action="/showpatient"  id="9" method="get"  class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('9').submit();">Show Patients</a></li>
+                        </form>
+                        <form id="11" action="/showdevice"  method="get"  class="right-div">
+                            <li class="op"><a href="javascript:;" onclick="document.getElementById('11').submit();">Show Medical Devices</a></li>
+                        </form>
+                         <form id="5" action="logout"  method="get" class="right-div">
+                            <li class="op" ><a href="javascript:;" onclick="document.getElementById('5').submit();">Log Out</a></li>
+                        </form>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>

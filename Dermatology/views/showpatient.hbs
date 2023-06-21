@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link href="/stylesheets/show patients.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <!-- <h1>Prescription</h1> -->
+            
+            <div class="form-container">
+                <h1>Patients <i class="fa fa-wheelchair" aria-hidden="true"></i></h1> 
+
+                <form action="showpatient" method="get">
+                    <div class="table-container">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                   
+                                    <th>Mobile Number</th>
+                                    <th>Sex</th>
+                                    <th>Age</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             {{#each data }}
+                                <tr>
+                              
+                                        
+                                   
+                                    <td>{{this._id}}</td>
+                                    <td>{{this.Pname}}</td>
+                                    <td>{{this.Pemail}}</td>
+                                    <td>{{this.Pphone}}</td>
+                                    <td>{{this.Psex}}</td>
+                                    <td>{{this.Page}}</td>
+                                 
+                                    
+                                </tr>
+                             {{/each}}     
+
+                                
+                                <!-- and so on... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </body>
+</html>

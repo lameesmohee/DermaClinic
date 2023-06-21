@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+    <title> Appointment </title>
+    <link rel="stylesheet" href="/stylesheets/appointments.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+
+<body>
+    <div class="container" id="container">
+        <!-- <h1>Prescription</h1> -->
+        
+        <div class="form-container">
+
+            <div class="header">
+            
+            <h1> Appointment <i class="fa fa-calendar" aria-hidden="true"></i></h1>
+            
+            </div>
+
+            <form action="appoint" method="post" class="form-action">
+                <div class="row">
+                    <div class="label-container">
+                        <label for="Department" style="width: 180px;"> Pick Department :</label>
+                    </div>
+                    <div class="value-container">
+                        <select name="department" id="Department" required >                 
+                                <option value="" selected> select </option>
+                                <option value="Dermatology Department"  > Dermatology Department </option>
+                                <option value="Pediatric Dermatology Department" > Pediatric Dermatology Department </option>
+                                <option value="Cosmetic Dermatology Department" >Cosmetic Dermatology Department </option>
+                               
+                        </select>
+                       
+                    </div>
+                    <button > submit</button> 
+                </div >
+              </form>
+                <form action="getdata" method="get">
+                    <div class="table-container">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                  <th>Doctor.ID</th>
+                                  <th>Day</th>
+                                  <th>From</th>
+                                  <th>To</th>
+                                  <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                           
+                            {{#each data2}}
+                                  {{#each this.slots}}
+                                <tr>
+                                  <td>{{this.doc_id1}}</td>
+                                  <td>{{this.Day}}</td>
+                                  <td>{{this.start}}</td>
+                                  <td>{{this.end}}</td>
+                                  
+                                  
+                                  <td><a href="/addappointment/{{this.doc_id1}}/{{this.Day}}/{{this.start}}" class="book">Book</a></td>
+                               
+                                </tr>
+                                        
+                                  
+                              
+                           
+                            
+                                
+                             {{/each}}
+                                      
+                             {{/each}}
+                                     
+                                <!-- and so on... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+               
+                <!-- <button>Submit</button> -->
+                
+          
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</head>
+
+
+
+
+</html>
